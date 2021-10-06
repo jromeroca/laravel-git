@@ -22,7 +22,11 @@ class MainController extends Controller
     }
 
     public function setBranch($branch) {
-        $this->repo->checkout(str_replace("@-@","/",$branch));
+        try {
+            $this->repo->checkout(str_replace("@-@","/",$branch));
+        }catch (\Exception $ex) {
+            dd($ex);
+        }
         return redirect("/laravel-git/main");
     }
 }
