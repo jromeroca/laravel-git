@@ -1,0 +1,26 @@
+{
+    "name": "jromero/laravel-git",
+    "description": "Paquete para conectar tu proyecto laravel con tu repositorio GIT y poder cambiar de rama para testear.",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "czproject/git-php": "^4.0",
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jromero\\LaravelGit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jromero\\LaravelGit\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "jromeroca",
+            "email": "jesus.romero84@outlook.com"
+        }
+    ]
+}
